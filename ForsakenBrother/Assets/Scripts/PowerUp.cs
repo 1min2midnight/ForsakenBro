@@ -23,14 +23,7 @@ public class PowerUp : MonoBehaviour
             PlayerCombat increaseA = player.GetComponent<PlayerCombat>();
 
 
-            ChangeColorAttack newColor = player.GetComponent<ChangeColorAttack>();
-            newColor.spriteColor = Color.green;
-
-
-
             increaseA.attackDamage += 10;
-
-            
 
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
